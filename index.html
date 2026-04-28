@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Soluções Solar | Energia Fotovoltaica de Alta Performance</title>
+    <meta name="description" content="Projetos de engenharia solar avançada para Agro, Indústria e Residências de Alto Padrão em Toledo e Cascavel. Reduza sua conta a zero com a Aurora.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Bloco 1: Navbar -->
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">
+                <img src="logodosite/lgooemsvg.svg" alt="Aurora Solar Logo" class="brand-logo">
+            </div>
+            <a href="https://wa.me/5545998350852?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20de%20energia%20solar" class="btn-outline" target="_blank" rel="noopener noreferrer">
+                <i class="ph ph-whatsapp-logo"></i> Solicitar Orçamento
+            </a>
+        </div>
+    </header>
+
+    <!-- Bloco 2: Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Energia Solar de Alta Performance para o Oeste do Paraná. <span class="highlight">Reduza sua Conta a Zero.</span></h1>
+                <p>Projetos de engenharia avançada para Agro, Indústria e Residências de Alto Padrão em <strong>Toledo</strong> e <strong>Cascavel</strong>. Homologação rápida na <strong>Copel</strong>.</p>
+                <div class="hero-badges">
+                    <span class="badge"><i class="ph ph-check-circle"></i> Engenharia Própria</span>
+                    <span class="badge"><i class="ph ph-check-circle"></i> Aprovação Rápida Copel</span>
+                </div>
+            </div>
+            
+            <div class="hero-form-wrapper">
+                <form class="lead-form" action="https://wa.me/5545998350852" method="GET" target="_blank">
+                    <!-- O formulário redirecionará para o whatsapp com os dados preenchidos via JS (opcional), mas aqui envia pro zap direto -->
+                    <h3>Simule sua Economia</h3>
+                    <p>Descubra em segundos o quanto você pode economizar.</p>
+                    
+                    <div class="input-group">
+                        <label for="name">Nome completo</label>
+                        <input type="text" id="name" placeholder="Seu nome" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="whatsapp">WhatsApp</label>
+                        <input type="tel" id="whatsapp" placeholder="(45) 90000-0000" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="conta">Valor médio da conta</label>
+                        <select id="conta" required>
+                            <option value="" disabled selected>Selecione o valor...</option>
+                            <option value="Ate R$ 500">Até R$ 500</option>
+                            <option value="R$ 500 a R$ 1.500">R$ 500 a R$ 1.500</option>
+                            <option value="R$ 1.500 a R$ 5.000">R$ 1.500 a R$ 5.000</option>
+                            <option value="Acima de R$ 5.000">Acima de R$ 5.000</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="segmento">Qual o seu segmento?</label>
+                        <select id="segmento" required>
+                            <option value="" disabled selected>Selecione o segmento...</option>
+                            <option value="Agro">Agronegócio</option>
+                            <option value="Indústria">Indústria / Comércio</option>
+                            <option value="Residencial">Residencial</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary form-btn">
+                        SIMULAR ECONOMIA AGORA <i class="ph ph-arrow-right"></i>
+                    </button>
+                    <small><i class="ph ph-lock-key"></i> Seus dados estão seguros conosco.</small>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloco 3: Faixa de Autoridade -->
+    <section class="authority-strip">
+        <div class="container strip-grid">
+            <div class="strip-item">
+                <i class="ph-fill ph-solar-panel"></i>
+                <div class="strip-text">
+                    <strong>+500</strong>
+                    <span>Projetos Entregues</span>
+                </div>
+            </div>
+            <div class="strip-item">
+                <i class="ph-fill ph-chart-line-up"></i>
+                <div class="strip-text">
+                    <strong>R$ 10M+</strong>
+                    <span>Em Economia Gerada</span>
+                </div>
+            </div>
+            <div class="strip-item">
+                <i class="ph-fill ph-map-pin"></i>
+                <div class="strip-text">
+                    <strong>Copel</strong>
+                    <span>Especialistas na Região</span>
+                </div>
+            </div>
+            <div class="strip-item">
+                <i class="ph-fill ph-bank"></i>
+                <div class="strip-text">
+                    <strong>Sicoob / Sicredi</strong>
+                    <span>Parceiros de Financiamento</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloco 4: Cards de Segmentação -->
+    <section class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Soluções Especializadas</h2>
+                <p>Engenharia fotovoltaica de alto padrão desenhada para a sua necessidade.</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <!-- Indústria -->
+                <div class="solution-card">
+                    <div class="card-icon"><i class="ph ph-factory"></i></div>
+                    <h3>Indústria & Comércio</h3>
+                    <p>Reduza custos operacionais de forma drástica. Projetos robustos para supermercados, fábricas e grandes comércios com alto consumo.</p>
+                    <ul class="benefits-list">
+                        <li><i class="ph ph-check"></i> Redução de custo fixo</li>
+                        <li><i class="ph ph-check"></i> Rápido Payback</li>
+                    </ul>
+                </div>
+                
+                <!-- AGRO (Destaque) -->
+                <div class="solution-card card-featured">
+                    <div class="card-ribbon">Solução Mais Buscada</div>
+                    <div class="card-icon featured-icon"><i class="ph ph-tractor"></i></div>
+                    <h3>Agronegócio</h3>
+                    <p>Silos, aviários, pocilgas e barracões. Máxima eficiência energética para o produtor rural escalar seus lucros.</p>
+                    <ul class="benefits-list">
+                        <li><i class="ph ph-check"></i> Resistência e Durabilidade</li>
+                        <li><i class="ph ph-check"></i> Linhas de crédito agro</li>
+                        <li><i class="ph ph-check"></i> Foco no Oeste do Paraná</li>
+                    </ul>
+                </div>
+                
+                <!-- Residencial -->
+                <div class="solution-card">
+                    <div class="card-icon"><i class="ph ph-house-line"></i></div>
+                    <h3>Residencial Alto Padrão</h3>
+                    <p>Conforto sem se preocupar com a conta de luz no final do mês. Instalações limpas que valorizam a arquitetura do seu imóvel.</p>
+                    <ul class="benefits-list">
+                        <li><i class="ph ph-check"></i> Estética e Acabamento</li>
+                        <li><i class="ph ph-check"></i> Valorização do imóvel</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloco 5: Timeline do Processo -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-header light-text">
+                <h2>Simples, Rápido e Transparente</h2>
+                <p>O caminho para zerar sua conta de energia em 4 passos ágeis.</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-step">
+                    <div class="step-icon"><i class="ph ph-magnifying-glass"></i></div>
+                    <div class="step-content">
+                        <h4>1. Análise Gratuita</h4>
+                        <p>Avaliamos sua conta de luz, padrão de consumo e estrutura.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-icon"><i class="ph ph-blueprint"></i></div>
+                    <div class="step-content">
+                        <h4>2. Projeto de Engenharia</h4>
+                        <p>Desenho técnico customizado para o máximo de geração por m².</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-icon"><i class="ph ph-file-text"></i></div>
+                    <div class="step-content">
+                        <h4>3. Instalação & Homologação</h4>
+                        <p>Equipe própria e trâmite burocrático ágil direto com a Copel.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-icon"><i class="ph ph-wallet"></i></div>
+                    <div class="step-content">
+                        <h4>4. Economia Imediata</h4>
+                        <p>Sistema ligado e gerando energia. Dinheiro no seu bolso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloco 6: Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-cta">
+                <h2>Pronto para gerar sua própria energia e parar de alugar da concessionária?</h2>
+                <a href="https://wa.me/5545998350852?text=Olá,%20estou%20pronto%20para%20começar%20meu%20projeto%20solar" class="btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+                    FALAR COM UM ENGENHEIRO AGORA <i class="ph ph-whatsapp-logo"></i>
+                </a>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <div class="logo">
+                        <img src="logodosite/lgooemsvg.svg" alt="Aurora Solar Logo" class="brand-logo">
+                    </div>
+                    <p>Energia limpa e rentável para o Paraná.</p>
+                </div>
+                <div class="footer-links">
+                    <p>Atendimento: Região Oeste do Paraná</p>
+                    <p>CNPJ: 53.841.388/0001-10</p>
+                    <p>&copy; 2026 Criado por <a href="https://suedoninem.pro" target="_blank" rel="noopener noreferrer">suedoninem.pro</a> Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script simples para interceptar o formulário e enviar mensagem montada pro WhatsApp
+        document.querySelector('.lead-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const conta = document.getElementById('conta').value;
+            const segmento = document.getElementById('segmento').value;
+            
+            const text = `Olá! Meu nome é ${name}. Gostaria de uma simulação. Meu segmento é ${segmento} e minha conta média é ${conta}.`;
+            const encodedText = encodeURIComponent(text);
+            const whatsappUrl = `https://wa.me/5545998350852?text=${encodedText}`;
+            
+            window.open(whatsappUrl, '_blank');
+        });
+    </script>
+</body>
+</html>
