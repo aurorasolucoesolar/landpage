@@ -93,28 +93,28 @@
     <!-- Bloco 3: Faixa de Autoridade -->
     <section class="authority-strip">
         <div class="container strip-grid">
-            <div class="strip-item">
+            <div class="strip-item animate-on-scroll animate-delay-1">
                 <i class="ph-fill ph-solar-panel"></i>
                 <div class="strip-text">
                     <strong>+500</strong>
                     <span>Projetos Entregues</span>
                 </div>
             </div>
-            <div class="strip-item">
+            <div class="strip-item animate-on-scroll animate-delay-2">
                 <i class="ph-fill ph-chart-line-up"></i>
                 <div class="strip-text">
                     <strong>R$ 10M+</strong>
                     <span>Em Economia Gerada</span>
                 </div>
             </div>
-            <div class="strip-item">
+            <div class="strip-item animate-on-scroll animate-delay-3">
                 <i class="ph-fill ph-map-pin"></i>
                 <div class="strip-text">
                     <strong>Copel</strong>
                     <span>Especialistas na Região</span>
                 </div>
             </div>
-            <div class="strip-item">
+            <div class="strip-item animate-on-scroll animate-delay-4">
                 <i class="ph-fill ph-bank"></i>
                 <div class="strip-text">
                     <strong>Sicoob / Sicredi</strong>
@@ -127,14 +127,14 @@
     <!-- Bloco 4: Cards de Segmentação -->
     <section class="solutions">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header animate-on-scroll">
                 <h2>Soluções Especializadas</h2>
                 <p>Engenharia fotovoltaica de alto padrão desenhada para a sua necessidade.</p>
             </div>
             
             <div class="solutions-grid">
                 <!-- Indústria -->
-                <div class="solution-card">
+                <div class="solution-card animate-on-scroll animate-delay-1">
                     <div class="card-icon"><i class="ph ph-factory"></i></div>
                     <h3>Indústria & Comércio</h3>
                     <p>Reduza custos operacionais de forma drástica. Projetos robustos para supermercados, fábricas e grandes comércios com alto consumo.</p>
@@ -145,7 +145,7 @@
                 </div>
                 
                 <!-- AGRO (Destaque) -->
-                <div class="solution-card card-featured">
+                <div class="solution-card card-featured animate-on-scroll animate-delay-2">
                     <div class="card-ribbon">Solução Mais Buscada</div>
                     <div class="card-icon featured-icon"><i class="ph ph-tractor"></i></div>
                     <h3>Agronegócio</h3>
@@ -158,7 +158,7 @@
                 </div>
                 
                 <!-- Residencial -->
-                <div class="solution-card">
+                <div class="solution-card animate-on-scroll animate-delay-3">
                     <div class="card-icon"><i class="ph ph-house-line"></i></div>
                     <h3>Residencial Alto Padrão</h3>
                     <p>Conforto sem se preocupar com a conta de luz no final do mês. Instalações limpas que valorizam a arquitetura do seu imóvel.</p>
@@ -174,34 +174,34 @@
     <!-- Bloco 5: Timeline do Processo -->
     <section class="timeline-section">
         <div class="container">
-            <div class="section-header light-text">
+            <div class="section-header light-text animate-on-scroll">
                 <h2>Simples, Rápido e Transparente</h2>
                 <p>O caminho para zerar sua conta de energia em 4 passos ágeis.</p>
             </div>
             
             <div class="timeline">
-                <div class="timeline-step">
+                <div class="timeline-step animate-on-scroll animate-delay-1">
                     <div class="step-icon"><i class="ph ph-magnifying-glass"></i></div>
                     <div class="step-content">
                         <h4>1. Análise Gratuita</h4>
                         <p>Avaliamos sua conta de luz, padrão de consumo e estrutura.</p>
                     </div>
                 </div>
-                <div class="timeline-step">
+                <div class="timeline-step animate-on-scroll animate-delay-2">
                     <div class="step-icon"><i class="ph ph-blueprint"></i></div>
                     <div class="step-content">
                         <h4>2. Projeto de Engenharia</h4>
                         <p>Desenho técnico customizado para o máximo de geração por m².</p>
                     </div>
                 </div>
-                <div class="timeline-step">
+                <div class="timeline-step animate-on-scroll animate-delay-3">
                     <div class="step-icon"><i class="ph ph-file-text"></i></div>
                     <div class="step-content">
                         <h4>3. Instalação & Homologação</h4>
                         <p>Equipe própria e trâmite burocrático ágil direto com a Copel.</p>
                     </div>
                 </div>
-                <div class="timeline-step">
+                <div class="timeline-step animate-on-scroll animate-delay-4">
                     <div class="step-icon"><i class="ph ph-wallet"></i></div>
                     <div class="step-content">
                         <h4>4. Economia Imediata</h4>
@@ -238,21 +238,44 @@
         </div>
     </footer>
 
+    <!-- Floating CTA (mobile only) -->
+    <a href="https://wa.me/5545998350852?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20de%20energia%20solar" class="floating-cta" id="floatingCta" target="_blank" rel="noopener noreferrer">
+        <i class="ph ph-whatsapp-logo"></i> Falar no WhatsApp
+    </a>
+
     <script>
-        // Script simples para interceptar o formulário e enviar mensagem montada pro WhatsApp
+        // Formulário → WhatsApp
         document.querySelector('.lead-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            
             const name = document.getElementById('name').value;
             const conta = document.getElementById('conta').value;
             const segmento = document.getElementById('segmento').value;
-            
             const text = `Olá! Meu nome é ${name}. Gostaria de uma simulação. Meu segmento é ${segmento} e minha conta média é ${conta}.`;
-            const encodedText = encodeURIComponent(text);
-            const whatsappUrl = `https://wa.me/5545998350852?text=${encodedText}`;
-            
-            window.open(whatsappUrl, '_blank');
+            window.open(`https://wa.me/5545998350852?text=${encodeURIComponent(text)}`, '_blank');
         });
+
+        // IntersectionObserver: anima elementos ao entrar na viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+        // CTA flutuante: oculta quando o formulário está visível
+        const floatingCta = document.getElementById('floatingCta');
+        const heroForm = document.querySelector('.hero-form-wrapper');
+        if (floatingCta && heroForm) {
+            const formObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    floatingCta.classList.toggle('hidden', entry.isIntersecting);
+                });
+            }, { threshold: 0.5 });
+            formObserver.observe(heroForm);
+        }
     </script>
 </body>
 </html>
